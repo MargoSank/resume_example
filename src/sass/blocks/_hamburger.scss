@@ -1,0 +1,24 @@
+.hamburger {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  height: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+  z-index: 3;
+  cursor: pointer;
+  span{
+    background: #151812;
+    display: block;
+  }
+  &__short {
+    width: 30px;
+    height: 3px;
+  }
+  &__long {
+    width: 36px;
+    height: 3px;
+  }
+}
