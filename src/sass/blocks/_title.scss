@@ -16,7 +16,24 @@
     font-size: 20px;
     line-height: 30px;
   }
+  &__fz36{
+    font-size: 36px;
+    line-height: 60px;
+  }
   &__fz48{
     font-size: 48px;
+  }
+  &__section-title{
+    position: relative;
+    text-align: center;
+    margin-bottom: 6px;
+    @include before_circle;
+    &:before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+  &__section-subtitle{
+    text-align: center;
   }
 }

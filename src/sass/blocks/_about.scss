@@ -1,15 +1,17 @@
 .about{
-  padding: 120px;
+  padding-top: 120px;
   &__wrapper{
     display: grid;
-    grid-template-columns: 400px 740px;
     grid-template-rows: minmax(245px, auto) minmax(245px, auto);
+    grid-template-columns: 400px 740px;
     gap: 40px 70px;
   }
   &__photo{
     grid-row: 1/3;
     img{
       width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
   &__description{
@@ -52,6 +54,9 @@
     &-img{
       position: relative;
       padding: 15px 0 0 15px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
       @include before_circle;
       &:before{
         top: 0;
